@@ -19,7 +19,8 @@ public class FeedingService {
     }
 
     public List<FeedingType> getAllFeedingTypes() {
-        return null;
+        List<FeedingType> f = feedingRepository.findAllFeedingTypes();
+        return f;
     }
 
     public FeedingType getFeedingType(String typeName) {
